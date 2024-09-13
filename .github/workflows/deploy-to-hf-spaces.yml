@@ -6,6 +6,8 @@ on:
       - dev
       - main
   workflow_dispatch:
+  schedule:
+    - cron: '0 16 * * *'  # 每天北京时间0点自动执行
 
 jobs:
   check-secret:
